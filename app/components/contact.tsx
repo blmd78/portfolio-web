@@ -3,14 +3,13 @@
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Separator } from "@/components/ui/separator";
-import React, { useEffect } from "react";
+import React from "react";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -95,6 +94,8 @@ const darkModeStyle = [
   },
 ];
 
+
+
 const Contact: React.FC = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -113,7 +114,7 @@ const Contact: React.FC = () => {
     <div>
       <h1 className="text-2xl font-bold">Contact Me</h1>
       <Separator className="h-1 w-[40px] rounded-full bg-[#BBB5A5] mb-4" />
-      <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
+      <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string}>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
           center={center}

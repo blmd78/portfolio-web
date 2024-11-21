@@ -81,6 +81,7 @@ export type TimelineEducation = (typeof timelineEducation)[number];
 export interface TimelineElement {
   id: number;
   title: string;
-  date: string;
-  description: string;
+  date1: string;
+  date2?: string;
+  description?: string;
 }
