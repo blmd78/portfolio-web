@@ -25,9 +25,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="bg-[#101010]">
-      <div className="flex-1 space-y-4 p-8">
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-12 h-[calc(100vh-64px)]">
-          <Card className="col-span-2 bg-[#212121] border-none text-white flex flex-col justify-center h-full">
+      <div className="flex-1 space-y-4 lg:p-8 p-4">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-12 h-[calc(100vh-64px)] grid-cols-1">
+          <Card className="lg:col-span-2 col-span-6 bg-[#212121] border-none text-white flex flex-col justify-center h-full">
             <CardHeader>
               <CardTitle>
                 <div className="flex justify-center">
@@ -56,7 +56,7 @@ export default function Home() {
               </CardTitle>
             </CardHeader>
             <CardContent className="px-6">
-              <div className="flex justify-center items-center mb-6">
+              <div className="flex justify-start items-center mb-6">
                 <div className="w-54 h-54 bg-[#464646] text-white flex items-center justify-center p-2 rounded-lg mr-2">
                   <Mail size={24} className="text-[#BBB5A5]"/>
                 </div>
@@ -100,7 +100,7 @@ export default function Home() {
               </div>
             </CardContent>
           </Card>
-          <Card className="col-span-10 bg-[#212121] border-none text-white">
+          <Card className="lg:col-span-10 col-span-6  bg-[#212121] border-none text-white">
             <CardHeader>
               <Tabs defaultValue="about" className="w-full">
                 <div className="flex justify-end">
