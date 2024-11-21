@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
-import Avatar from "./portfolio.png";
+// import Avatar from "/portfolio.png";
 import { Button } from "@/components/ui/button";
 import { Calendar, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import About from "./components/about";
@@ -35,7 +35,9 @@ export default function Home() {
                     <CardContent className="">
                       {" "}
                       <Image
-                        src={Avatar}
+                      src="/portfolio.png"
+                      width={200}
+                      height={200}
                         alt="portfolio"
                         className="w-48 h-48 object-cover"
                       />
