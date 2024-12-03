@@ -1,26 +1,34 @@
 export const timelineData = [
   {
     id: 1,
-    title: "Arkone",
-    date1: "2024-09-05",
-    date2: "2024-10-28",
+    title: "Développeur fullstack - Arkone",
+    date1: "09/2024",
+    date2: "10/2024",
     description: `Arkone est une entreprise française spécialisé dans le la création d'application
     Web et mobile.
     • Création du Site vitrine pour le congrès Point S
     • Création du Site Formulaire d’inscription (Partenaire et adhérent)
-    Benoit GASNIER 1
     • Création d’un back office pour la gestion des activité, des plan de table,
     des moyens de transports.
     • Création du back avec NodeJs
     • Mise en place de test unitaire`,
+    skills: [
+      "React",
+      "Typescript",
+      "NodeJs",
+      "Jest",
+      "MongoDB",
+      "Github",
+      "Notion",
+    ],
+    companyIcon: "/arkone-icon.png",
   },
   {
     id: 2,
-    title: "Atixis",
-    date1: "2024-09-05",
-    date2: "2024-10-28",
-    description:
-      `Atixis est une entreprise spécialisée dans l'ingénierie, le conseil et la gestion de
+    title: "Développeur fullstack - Atixis",
+    date1: "09/2022",
+    date2: "07/2024",
+    description: `Atixis est une entreprise spécialisée dans l'ingénierie, le conseil et la gestion de
         projets. Elle intervient principalement dans les secteurs du bâtiment, des
         infrastructures et de l'industrie.
         Le projet vise à améliorer l'outils de gestion d'Atixis pour accroître l'efficacité et
@@ -39,12 +47,32 @@ export const timelineData = [
         • Améliorer la plateforme en matière de design.
         • Rédaction de documentation (Swagger et doc technique)
         • Mise en Place de Pull Request`,
+    skills: [
+      "React",
+      "Express",
+      "Passport",
+      "Mongoose",
+      "JWT",
+      "Rechart",
+      "NodeJs",
+      "TypeScript",
+      "i18n",
+      "Swagger",
+      "Microservice",
+      "Pull Request",
+      "MongoDB",
+      "Azure",
+      "Teams",
+      "Notion",
+      "Figma",
+    ],
+    companyIcon: "/atixis-icon.png",
   },
   {
     id: 3,
-    title: "Tropicalswap",
-    date1: "2024-09-05",
-    date2: "2024-10-28",
+    title: "Développeur fullstack - Tropicalswap",
+    date1: "11/2024",
+    date2: "07/2024",
     description: `
       TropicalSwap est une plateforme d'échange décentralisée (DEFI) basée sur la
       technologie blockchain, offrant des services de swap, de farming, et de staking
@@ -56,6 +84,20 @@ export const timelineData = [
       • Relier le Front au smart contract
       • la CI / CD,Mise en place de pipeline pour automatiser les tests le
       déploiement et les mises à jour de l'application sur une infrastructure Cloud.`,
+    skills: [
+      "React",
+      "NextJS",
+      "Typescript",
+      "CI/CD",
+      "Cloud",
+      "Github",
+      "Netlify",
+      "Figma",
+      "Shadcn",
+      "Discord",
+      "Asana",
+    ],
+    companyIcon: "/tropicalswap-icon.png",
   },
 ];
 
@@ -69,9 +111,8 @@ export const timelineEducation = [
   {
     id: 2,
     title: "Lycée Louis Bascan",
-    date1: "2024-09-05",
-    description:
-      `Bac STI2D`,
+    date1: "2018",
+    description: `Bac STI2D`,
   },
 ];
 
@@ -84,4 +125,6 @@ export interface TimelineElement {
   date1: string;
   date2?: string;
   description?: string;
+  skills?: string[];
+  companyIcon?: string;
 }

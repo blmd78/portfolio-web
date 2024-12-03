@@ -4,6 +4,13 @@ import { timelineData, timelineEducation } from "../data";
 import { Separator } from "@radix-ui/react-separator";
 import { Card, CardContent } from "@/components/ui/card";
 import { Code } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Badge } from "@/components/ui/badge";
 
 const Resume: React.FC = () => {
   return (
@@ -13,11 +20,47 @@ const Resume: React.FC = () => {
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
         <div>
           <h1 className="text-2xl font-bold mb-4">Experience</h1>
-          <TimelineLayout items={timelineData} />
+          {/* <TimelineLayout items={timelineData} /> */}
+          <Accordion type="single" collapsible className="w-full">
+            {timelineData.map((item, index) => (
+              <AccordionItem value={`item-${index}`} className="border-none">
+                <AccordionTrigger className="bg-[#2E2E2E] text-white hover:bg-[#464646] rounded-md mb-4 flex justify-between px-4">
+                  <div>{item.title}</div>
+                  <div>
+                    {item.date1} - {item.date2}
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="bg-[#464646] rounded-md p-4 mb-4">
+                  {item.description.split("•").map((text, index) => (
+                    <p key={index} className="mb-2">
+                      {index > 0 && " • "}
+                      {text.trim()}
+                    </p>
+                  ))}
+
+                  <div className="justify-center flex">
+                    <img
+                      src={item.companyIcon}
+                      alt="company icon"
+                      height={100}
+                      className="h-[100px]"
+                    />
+                  </div>
+                  <div>
+                    {item?.skills?.map((skill) => (
+                      <Badge variant="secondary" className="bg-[#BBB5A5] m-1">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
         <div>
           <h1 className="text-2xl font-bold mb-4">Education</h1>
-          <TimelineLayout items={timelineEducation} />
+           <TimelineLayout items={timelineEducation} />
         </div>
       </div>
 

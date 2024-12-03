@@ -19,7 +19,7 @@ interface TimelineLayoutProps {
 }
 export const TimelineLayout = ({ items }: TimelineLayoutProps) => {
   return (
-    <Timeline className="ml-[71.62px]">
+    <Timeline className="lg:ml-[71.62px]">
   {items.map((item) => (
     <TimelineItem key={item.id}>
       {item.id !== items[items.length - 1].id && <TimelineConnector />}

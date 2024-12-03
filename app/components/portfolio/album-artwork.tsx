@@ -1,8 +1,9 @@
-import Image from "next/image";
+"use client";
 
 import { cn } from "@/lib/utils";
 
 import { Album } from "./data/data";
+import { Link } from "lucide-react";
 
 interface AlbumArtworkProps extends React.HTMLAttributes<HTMLDivElement> {
   album: Album;
@@ -35,8 +36,20 @@ export function AlbumArtwork({
       </div>
 
       <div className="space-y-1 text-sm">
-        <h3 className="font-medium leading-none">{album.name}</h3>
-        <p className="text-xs text-muted-foreground">{album.artist}</p>
+        <div className="flex justify-between">
+          <div>
+            <h3 className="font-medium leading-none">{album.name}</h3>
+            <p className="text-xs text-muted-foreground">{album.artist}</p>
+          </div>
+          {album.link && (
+            <div onClick={() => window.open(album.link)}>
+              <Link
+                size={25}
+                className="mr-2 hover:bg-[#464646] p-1 rounded-lg  cursor-pointer"
+              ></Link>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
