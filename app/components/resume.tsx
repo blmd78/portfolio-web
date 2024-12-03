@@ -90,7 +90,7 @@ const Resume: React.FC = () => {
             </div>
           </CardContent>
         </Card>
-        <Card className="bg-[#2E2E2E] border-none text-white hover:bg-[#464646] w-full">
+        {/* <Card className="bg-[#2E2E2E] border-none text-white hover:bg-[#464646] w-full">
           <CardContent className="px-6 pt-6 h-full flex flex-col justify-between">
             <div className="flex items-start items-center">
               <Code size={30} className="text-[#BBB5A5] mr-2 flex-shrink-0" />
@@ -99,7 +99,7 @@ const Resume: React.FC = () => {
               </div>
             </div>
           </CardContent>
-        </Card>
+        </Card> */}
         <Card className="bg-[#2E2E2E] border-none text-white hover:bg-[#464646] w-full">
           <CardContent className="px-6 pt-6 h-full flex flex-col justify-between">
             <div className="flex items-start items-center">
@@ -130,7 +130,7 @@ const Resume: React.FC = () => {
             </div>
           </CardContent>
         </Card>
-        <Card className="bg-[#2E2E2E] border-none text-white hover:bg-[#464646] w-full">
+        {/* <Card className="bg-[#2E2E2E] border-none text-white hover:bg-[#464646] w-full">
           <CardContent className="px-6 pt-6 h-full flex flex-col justify-between">
             <div className="flex items-start items-center">
               <Code size={30} className="text-[#BBB5A5] mr-2 flex-shrink-0" />
@@ -159,8 +159,8 @@ const Resume: React.FC = () => {
               </div>
             </div>
           </CardContent>
-        </Card>
-        <Card className="bg-[#2E2E2E] border-none text-white hover:bg-[#464646] w-full">
+        </Card> */}
+        {/* <Card className="bg-[#2E2E2E] border-none text-white hover:bg-[#464646] w-full">
           <CardContent className="px-6 pt-6 h-full flex flex-col justify-between">
             <div className="flex items-start items-center">
               <Code size={30} className="text-[#BBB5A5] mr-2 flex-shrink-0" />
@@ -169,8 +169,8 @@ const Resume: React.FC = () => {
               </div>
             </div>
           </CardContent>
-        </Card>
-        <Card className="bg-[#2E2E2E] border-none text-white hover:bg-[#464646] w-full">
+        </Card> */}
+        {/* <Card className="bg-[#2E2E2E] border-none text-white hover:bg-[#464646] w-full">
           <CardContent className="px-6 pt-6 h-full flex flex-col justify-between">
             <div className="flex items-start items-center">
               <Code size={30} className="text-[#BBB5A5] mr-2 flex-shrink-0" />
@@ -179,7 +179,7 @@ const Resume: React.FC = () => {
               </div>
             </div>
           </CardContent>
-        </Card>
+        </Card> */}
         <Card className="bg-[#2E2E2E] border-none text-white hover:bg-[#464646] w-full">
           <CardContent className="px-6 pt-6 h-full flex flex-col justify-between">
             <div className="flex items-start items-center">

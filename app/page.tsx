@@ -72,14 +72,14 @@ export default function Home() {
                   (+33) 6 95 41 83 47
                 </div>
               </div>
-              <div className="flex justify-start items-center mb-6">
+              {/* <div className="flex justify-start items-center mb-6">
                 <div className="w-54 h-54 bg-[#464646] text-white flex items-center justify-center p-2 rounded-lg mr-2">
                   <Calendar size={24} className="text-[#BBB5A5]"/>
                 </div>
                 <div className="truncate max-w-xs" style={{ lineHeight: "1" }}>
                   Juillet 2024
                 </div>
-              </div>
+              </div> */}
               <div className="flex justify-start items-center mb-6">
                 <div className="w-54 h-54 bg-[#464646] text-white flex items-center justify-center p-2 rounded-lg mr-2">
                   <MapPin size={24} className="text-[#BBB5A5]"/>
@@ -89,14 +89,20 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex justify-center">
-                <Linkedin
+                <div className="w-54 h-54 bg-[#464646] text-white hover:bg-[#2E2E2E] hover:cursor-pointer flex items-center justify-center p-2 rounded-lg mr-2">
+                  <Linkedin size={24} className="text-[#BBB5A5]"/>
+                </div>
+                <div className="w-54 h-54 bg-[#464646] text-white hover:bg-[#2E2E2E] hover:cursor-pointer flex items-center justify-center p-2 rounded-lg mr-2">
+                  <Github size={24} className="text-[#BBB5A5]"/>
+                </div>
+                {/* <Linkedin
                   size={30}
                   className="mr-2 hover:bg-[#464646] p-1 rounded-lg cursor-pointer"
                 />
                 <Github
                   size={30}
                   className="mr-2 hover:bg-[#464646] p-1 rounded-lg  cursor-pointer"
-                />
+                /> */}
               </div>
             </CardContent>
           </Card>
